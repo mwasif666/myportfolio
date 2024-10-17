@@ -69,7 +69,7 @@ const Services = [
     icon: icon1,
     title: "Front end Development",
     slug: "Website-Design",
-    description: "I have complete 25+ websitedesign for my happy clients.",
+    description: "I have complete 25+ website design for my happy clients.",
   },
   {
     Id: "02",

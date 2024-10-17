@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import simpleParallax from "simple-parallax-js";
 import PortfolioItems from "../../api/Project";
-import { Link } from "react-router-dom";
-
-const ClickHandler = () => {
-  window.scrollTo(10, 0);
-};
 
 const ProjectSection = (props) => {
   useEffect(() => {
@@ -57,7 +52,7 @@ const ProjectSection = (props) => {
                   onClick={() => handleFilterClick("website")}
                   className={activeFilter === "website" ? "active" : ""}
                 >
-                  Website
+                  Website Design
                 </button>
               </li>
               <li>
@@ -65,7 +60,7 @@ const ProjectSection = (props) => {
                   onClick={() => handleFilterClick("app")}
                   className={activeFilter === "app" ? "active" : ""}
                 >
-                  App
+                  Website Development
                 </button>
               </li>
               <li>
@@ -73,17 +68,17 @@ const ProjectSection = (props) => {
                   onClick={() => handleFilterClick("webapp")}
                   className={activeFilter === "webapp" ? "active" : ""}
                 >
-                  Web App
+                  Wordpress
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button
                   onClick={() => handleFilterClick("brand")}
                   className={activeFilter === "brand" ? "active" : ""}
                 >
                   Branding
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="portfolio-wrap">
@@ -107,12 +102,14 @@ const ProjectSection = (props) => {
                     </div>
                     <div className="text">
                       <h2>
-                        <Link
-                          onClick={ClickHandler}
-                          to={`/project-single/${item.slug}`}
+                        {/* Replace Link with an anchor tag for external URL */}
+                        <a
+                          href={item.externalUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           {item.title}
-                        </Link>
+                        </a>
                       </h2>
                       <span>{item.subtitle}</span>
                     </div>

@@ -24,7 +24,7 @@ const HomePage4 = () => {
           <Service hclass={"service-section"} />
           <ProjectSection hclass={"portfolio-section"} />
           <Testimonial hclass={"testimonial-section"} />
-          <BlogSectionS2 />
+          {/* <BlogSectionS2 /> */}
           <ContactForm Cclass={"contact-section"} />
         </div>
       </div>

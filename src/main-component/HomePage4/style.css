@@ -75,3 +75,10 @@ span {
 .protfolio-card .image img {
   transform: none !important;
 }
+.port-top-btn ul li button {
+  font-size: 16px !important;
+  padding: 0 23px !important;
+}
+.contact-section {
+  width: 90%;
+}

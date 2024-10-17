@@ -17,10 +17,10 @@ const ServiceSection = (props) => {
         <div className="row">
           {Services.slice(0, 2).map((service, sitem) => (
             <div className="col col-lg-6 col-md-6 col-12" key={sitem}>
-              <Link
+              {/* <Link
                 onClick={ClickHandler}
                 to={`/service-single/${service.slug}`}
-              >
+              > */}
                 <div
                   className="service-card scroll-text-animation"
                   data-animation="fade_from_bottom"
@@ -33,7 +33,7 @@ const ServiceSection = (props) => {
                     <span>{service.description}</span>
                   </div>
                 </div>
-              </Link>
+              {/* </Link> */}
             </div>
           ))}
         </div>
